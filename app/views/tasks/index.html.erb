@@ -20,7 +20,7 @@
     </tbody>
   </table>
   <div>
-    <%= paginate @tasks%>
+    <%= paginate @tasks.page(params[:page])%>
   </div>
 <% end %>
 
